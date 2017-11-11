@@ -9,65 +9,79 @@ body {
 }
 
 main{
-    height: 100vh;
-    background: linear-gradient(0deg, #0FBFBF, #29FFC6);
+    height: 100vh;;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
-    align-self: flex-start;
-}
+
 
 .quote,
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 60px;
     font-weight: 500;
-    color: #fff;
-    margin-top: 10px;
+    
 }
 
 .quoteContainer{
-    margin: auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    max-width: 75%;
+    max-width: 65%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    color: black;
+    margin: 40px 0 40px;
 }
 
 .buttonContainer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 75%;
 }
 
 .author{
-    font-size: 1.2em;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
     padding: 10px;
 }
 
 .quote{
-    padding: 20px;
-    width: 75%;
-    font-size: 60px;
+    font-size: 70px;
+    margin: auto 0;
+    font-weight: 700;
 }
 
 button {
-    border: 2px solid rgb(23, 175, 94);
-    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    border-radius: 40px;
     color: #ffffff;
     font-size: 1.5rem;
     padding: .416em 1.667em;
-    background-color: rgb(23,175,94);
+    background-color: #249AF0;
     margin: .416em;
     text-align: center;
+    border: none;
+
+}
+
+button img{
+    width: 30.83px;
+    height: 26.09px;
+    color: white;
 }
 
 .newQuote{
-    background: transparent;
+    background: #FF0D0D;
 }

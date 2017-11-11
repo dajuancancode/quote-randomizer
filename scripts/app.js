@@ -6,26 +6,35 @@ const mainBackground = document.querySelector('main');
 let red;
 let blue;
 let green;
-let viewedQuotes
+let viewedQuotes = [];
 
-viewedQuotes = []
+function randomColorGenerator() {
+    let randomColor;
+    red = Math.floor(Math.random() * 256);
+    blue = Math.floor(Math.random() * 256);
+    orange = Math.floor(Math.random() * 256);
+    randomColor = 'rgb(' + red + ',' + blue + ',' + orange + ')';
+    return randomColor;
+  }
 
-let randomNum = () => Math.floor(Math.random() * (quotes.length))
-
-newQuote.addEventListener('click', () => {
-
+let randomNum = () => Math.floor(Math.random() * (quotes.length));
+let randomQuote = () => {
     if(quotes.length === 0){
         quotes = viewedQuotes;
         viewedQuotes = [];
     }
-    
-    
-
+        
     i = randomNum()
 
     quoteContainer.textContent = quotes[i].quote;
     authorContainer.textContent = '- ' + quotes[i].author;
     
-    let splicedQuote = quotes.splice(i, 1)[0]
-    viewedQuotes.push(splicedQuote)
-})
+    let splicedQuote = quotes.splice(i, 1)[0];
+    viewedQuotes.push(splicedQuote);
+};
+
+newQuote.addEventListener('click', () => {
+    mainBackground.style.backgroundColor = randomColorGenerator();
+    randomQuote();
+    
+});

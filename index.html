@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet"> 
-    <script src="https://use.fontawesome.com/66a1cecaf6.js"></script>
+    <title>Quote Randomizer</title>
     <link href="styles/main.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,500|Lato:400,700" rel="stylesheet"> 
+    <script src="https://use.fontawesome.com/66a1cecaf6.js"></script>
     
 </head>
 <body>
     <main>
-        <h1 class="title">Programming Quote Randomizer</h1>
+        <h1 class="title">Random Quote Generator</h1>
         <section class="quoteContainer">
-            <p class="quote">Click the button to get a quote.</p>
-            <p class="author"></p>
-            <div class="buttonContainer">
-                <button class="newQuote">Next</button>
-                <button class="tweet" ><i class="fa fa-twitter" aria-hidden="true"></i> Share</button>
-            </div>
+            <p class="quote">Measuring programming progress by lines of code is like measuring aircraft building progress by weight</p>
+            <p class="author">- Bill Gates</p>
         </section>
-        
+        <div class="buttonContainer">
+            <button class="newQuote">
+                <img src="assets/quote-left.svg" alt="quote-left">
+                Generate Quote
+                <img src="assets/right-quotation-mark.svg" alt="quote-right">
+            </button>
+            <button class="tweet">
+                Tweet Quote
+                <img src="assets/twitter.svg" alt="twitter-logo" />
+            </button>
+        </div>
     </main>
     <script src="scripts/quotes.js" type="text/javascript"></script>
     <script src="scripts/app.js" type="text/javascript"></script>
